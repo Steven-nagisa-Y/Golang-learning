@@ -4,12 +4,12 @@ import (
 	"fmt"
 )
 
-type Matrix struct {
+type matrix struct {
 	r int
 	c int
 }
 
 func  main()  {
-	var ma = Matrix{1, 2}
+	var ma = matrix{1, 2}
 	fmt.Println(ma.r)
 }

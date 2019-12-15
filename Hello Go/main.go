@@ -1,16 +1,24 @@
 package main
 
-import (
-	"fmt"
-)
-
-const (
-	POOL = 100
-)
+import "fmt"
 
 func main() {
-	num := []int {1, 2, 3, 4, 5, 6, 7, 8, 9}
-	fmt.Println(num[:])
-	var str [POOL]string
-	fmt.Println(len(str))
+	s := []int{2, 3, 5, 7, 11, 13}
+	printSlice(s)
+
+	// 截取切片使其长度为 0
+	s = s[:0]
+	printSlice(s)
+
+	// 拓展其长度
+	s = s[:4]
+	printSlice(s)
+
+	// 舍弃前两个值
+	s = s[2:]
+	printSlice(s)
+}
+
+func printSlice(s []int) {
+	fmt.Printf("len=%d cap=%d %v\n", len(s), cap(s), s)
 }
