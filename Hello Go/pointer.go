@@ -3,8 +3,10 @@ package main
 import (
 	"fmt"
 )
+
+// Define some variables
 const (
-	maxi = 10
+	MAXI = 10
 )
 
 func main()  {
@@ -12,7 +14,7 @@ func main()  {
 		i int
 		p *int
 	)
-	for i=0; i<maxi; i++ {
+	for i=0; i<MAXI; i++ {
 		p = &i
 		fmt.Println(*p)
 	}
