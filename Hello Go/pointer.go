@@ -4,8 +4,9 @@ import (
 	"fmt"
 )
 
-// Define some variables
+
 const (
+	// MAXI : what is this?
 	MAXI = 10
 )
 
